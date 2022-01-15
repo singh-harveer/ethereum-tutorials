@@ -1,0 +1,5 @@
+sudo apt install npm
+go get github.com/ethereum/go-ethereum
+install solc
+install protobuf compiler
+install abigen // to convert solodity file to golang
