@@ -13,7 +13,7 @@ import (
 
 var (
 	infuraURL       = "https://mainnet.infura.io/v3/19cf9d0231904627a52f9607565c8076"
-	contractAddress = "0xF403C135812408BFbE8713b5A23a04b3D48AAE31"
+	contractAddress = "0xf403c135812408bfbe8713b5a23a04b3d48aae31"
 	timeout         = 60 * time.Second
 )
 
@@ -33,7 +33,7 @@ func main() {
 	}
 
 	var result []interface{}
-	err = iRewardsCaller.contract.Call(&bind.CallOpts{}, &result, "getReward", common.HexToAddress(""))
+	err = iRewardsCaller.contract.Call(&bind.CallOpts{}, &result, "getReward", common.HexToAddress("0xf5f6da1b9b2416b1fc824a119e5b9a95c537669a"))
 	if err != nil {
 		log.Fatalf("failed to get reward: %v", err)
 	}
